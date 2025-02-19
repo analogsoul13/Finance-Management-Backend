@@ -11,8 +11,8 @@ financeApp.use(cors())
 financeApp.use(express.json())
 
 
-financeApp.use("/user",userRoutes)
-financeApp.use("/transactions",transactionRoutes)
+financeApp.use("/user", userRoutes)
+financeApp.use("/transactions", transactionRoutes)
 
 const PORT = 3000 || process.env.PORT
 

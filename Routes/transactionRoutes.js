@@ -5,7 +5,7 @@ const jwtMiddleware = require('../Middlewares/jwtMiddleware')
 
 
 router.get("/", jwtMiddleware, getTransactions)
-router.post("/add", jwtMiddleware, addTransaction)
+router.post("/", jwtMiddleware, addTransaction)
 router.delete("/:id", jwtMiddleware, deleteTransaction)
 
 
